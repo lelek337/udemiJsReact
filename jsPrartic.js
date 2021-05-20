@@ -281,20 +281,51 @@
 
 // console.log(internet);
 
-function log(a, b, c) {
-    console.log(a);
-    console.log(b);
-    console.log(c);
+// function log(a, b, c) {
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
 
-}
-const num = [2, 5, 7];
-log(...num);
+// }
+// const num = [2, 5, 7];
+// log(...num);
 
-const arr = ['a', 'b'];
-const newArr = [...arr];
+// const arr = ['a', 'b'];
+// const newArr = [...arr];
 
-const q = {
-    one: 1,
-    two: 2
+// const q = {
+//     one: 1,
+//     two: 2
+// };
+// const newObj = {...q };
+
+
+//"Номер 23. Основы ООП."
+
+// let str = 'some';
+// let strObj = new String(str);
+
+// console.log(typeof(str));
+// console.log(typeof(strObj));
+
+const soldier = {
+    health: 400,
+    armor: 100,
+    sayHello: function() {
+        console.log('Hello');
+    }
 };
-const newObj = {...q };
+
+const joinh = Object.create(soldier);
+
+// const joinh = {
+//     health: 100
+// };
+
+//"Устаревшая конструкция"
+// joinh.__proto__ = soldier;
+
+// Object.setPrototypeOf(joinh, soldier);
+
+// console.log(joinh.armor);
+joinh.sayHello();
