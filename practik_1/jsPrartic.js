@@ -308,15 +308,15 @@
 // console.log(typeof(str));
 // console.log(typeof(strObj));
 
-const soldier = {
-    health: 400,
-    armor: 100,
-    sayHello: function() {
-        console.log('Hello');
-    }
-};
+// const soldier = {
+//     health: 400,
+//     armor: 100,
+//     sayHello: function() {
+//         console.log('Hello');
+//     }
+// };
 
-const joinh = Object.create(soldier);
+//const joinh = Object.create(soldier);
 
 // const joinh = {
 //     health: 100
@@ -328,4 +328,94 @@ const joinh = Object.create(soldier);
 // Object.setPrototypeOf(joinh, soldier);
 
 // console.log(joinh.armor);
-joinh.sayHello();
+//joinh.sayHello();
+
+//Номер 26 динамическая типизацмя
+
+//To string
+
+// 1)
+// console.log(typeof(String(null)));
+// console.log(typeof(String(4)));
+
+// 2)
+// console.log(typeof(5 + ''));
+
+// const num = 5;
+// console.log('https://vk.com/catalog/' + num);
+
+// const fontSize = 26 + 'px';
+
+//To numbr
+
+// 1)
+// console.log(typeof(Number('4')));
+
+// 2)
+// console.log(typeof(+'5'));
+
+// 3)
+// console.log(typeof(parseInt('45px', 10)));
+
+// let answ = +prompt('Hello', '');
+
+//To boolean
+
+//  0, '', undefined, null, NaN
+
+// 1)
+// let switcher = null;
+
+// if (switcher) {
+//     console.log('working ...');
+// }
+
+// switcher = 1;
+
+// if (switcher) {
+//     console.log('working ...');
+// }
+
+// 2)
+// console.log(typeof(Boolean('4')));
+
+//3)
+// console.log(typeof(!!'555'))ж
+
+//Урок номер 27
+
+//Какое будет выведено значение: let x = 5; alert( x++ ); ? ('6')
+// ('5')
+
+//	Чему равно такое выражение: [ ] + false - null + true ? ('null')
+//( NaN)
+
+//Что выведет этот код: let y = 1; let x = y = 2; alert(x); ? ('2')
+//  ("2")
+
+//	Чему равна сумма [ ] + 1 + 2?  ('3')
+// ("12")
+
+//  Что выведет этот код: alert( "1"[0] )?  ('10')
+// ("1")
+
+//	Чему равно 2 && 1 && null && 0 && undefined ?  ('null')
+//  И - запирается на лжи
+//  ИЛИ - запинается на правде
+
+//	Есть ли разница между выражениями? !!( a && b ) и (a && b)?  (Нет)
+//  ("false") 
+
+//	Что выведет этот код: alert( null || 2 && 3 || 4 ); ?  ('null, 6, 4')
+//  ("3")
+
+//	a = [1, 2, 3]; b = [1, 2, 3]; Правда ли что a == b ?  ('Yes')
+//  ("false")
+
+//	Что выведет этот код: alert( +"Infinity" ); ?  ('Infinity')
+
+//	Верно ли сравнение: "Ёжик" > "яблоко"?  ('yes')
+//  ("false")
+
+//	Чему равно 0 || "" || 2 || undefined || true || falsе ? ('false')
+//  ("2")
