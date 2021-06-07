@@ -90,7 +90,7 @@
 // });
 
 // btn.addEventListener('click', function(e){
-  
+
 //   e.target.style.backgroundColor = 'red';
 // });
 
@@ -115,38 +115,51 @@
 // console.log(double(4));
 
 
-      //Классы
+//Классы
 
-class Rectangle {
-  constructor(height, width) {
-    this.height = height;
-    this.width = width;
-  }
+// class Rectangle {
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
 
-  calcArea() {
-    return this.height * this.width;
-  }
-} 
+//   calcArea() {
+//     return this.height * this.width;
+//   }
+// } 
 
-class ColoredRectanglewidthText extends Rectangle {
-  constructor(height, width, text, bgcolor) {
-    super(height, width);
-    this.text = text;
-    this.bgcolor = bgcolor;
-  }
+// class ColoredRectanglewidthText extends Rectangle {
+//   constructor(height, width, text, bgcolor) {
+//     super(height, width);
+//     this.text = text;
+//     this.bgcolor = bgcolor;
+//   }
 
-  showMyProps() {
-    console.log(`Текст: ${this.text}, Цвет: ${this.bgcolor}`);
-  }
-}
+//   showMyProps() {
+//     console.log(`Текст: ${this.text}, Цвет: ${this.bgcolor}`);
+//   }
+// }
 
-const div = new ColoredRectanglewidthText(25, 15, 'Hello worid', 'red');
+// const div = new ColoredRectanglewidthText(25, 15, 'Hello worid', 'red');
 
-div.showMyProps();
-console.log(div.calcArea());
+// div.showMyProps();
+// console.log(div.calcArea());
 
 // const square = new Rectangle(10, 10);
 // const long = new Rectangle(20, 100);
 
 // console.log(square.calcArea());
 // console.log(long.calcArea());
+
+       //Rest and ES6
+
+const log = function(a, b, ...rest) {
+  console.log(a, b, rest);
+};
+log('basic', 'rest', 'operator', 'usage');
+
+function calcOrDuble(number, basis = 2) {
+  
+  console.log(number * basis);
+}
+calcOrDuble(3, );
