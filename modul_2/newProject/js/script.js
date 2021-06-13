@@ -245,9 +245,7 @@ window.addEventListener('DOMContentLoaded', () => {
       `;
       
       form.insertAdjacentElement('afterend', statusMessage);
-
-     
-
+      
       const formData = new FormData(form);
 
       const object = {};
